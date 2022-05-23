@@ -13,4 +13,4 @@ export SteamAppId=1604030
 export STEAMAPPID=1604030
 
 echo "Starting server..."
-WINEDLLOVERRIDES=${DLL} xvfb-run wine64 /app/vrising/VRisingServer.exe -serverName "BlackRaven" -saveName "blackraven"  2>&1 | tee ${STEAMAPPDIR}/entry.log
+WINEDLLOVERRIDES=${DLL} xvfb-run wine64 /app/vrising/VRisingServer.exe -serverName "$SERVERNAME" -saveName "$SAVENAME"  2>&1 | tee ${STEAMAPPDIR}/entry.log
